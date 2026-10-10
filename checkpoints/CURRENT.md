@@ -11,6 +11,15 @@ Phase: bootstrap.
 ## Completed
 
 - continuity protocol initialized.
+- The full agent stack is installed as pinned external checkouts: the multi-agent
+  hot-loader, the continuity modules, the content system, and the issue-log surface.
+- The `gates` check runs on every pull request and every push to `main`, and `main`
+  requires it before merging.
+- Auto-merge is armed on owner pull requests, so a green pull request merges itself with
+  no human approval step.
+- The product README landed on `main` (merge `fefaff1`, PR #1). The first version failed
+  the content-system adapter check because it named the helper; the rewrite describes the
+  target product instead, and `gates` passed on the fixed tree.
 
 ## Active
 
