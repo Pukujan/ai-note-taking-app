@@ -1,0 +1,65 @@
+{
+  "schema_version": "content-generation.project-brief.v2",
+  "project": "ai-note-taking-app",
+  "audience": [
+    "Higher-education students who need lecture content captured and turned into usable study notes",
+    "University accessibility and disability-services staff who arrange note-taking accommodations under DSA/ADA",
+    "The owner, who is defining the product and will revise this brief as decisions are made"
+  ],
+  "problem": "A student in a lecture has to listen, follow slides, and write at the same time. When that is not possible — because of a disability, a language gap, or simply the pace of the lecture — the notes that come out are thin, and the accommodation that replaces them is expensive for the university and slow for the student. Lecture audio is long, and a plain transcript is not the same thing as a set of notes a student can study from.",
+  "solution": "An AI note-taking app that captures lecture audio, transcribes it, and turns the transcript into structured study material the student can read, search, and revise from. This is the niche Genio and Jamworks occupy, aimed at the same buyers: the student and the university accessibility office.",
+  "mechanism": [
+    "Capture lecture audio (in person and/or online) and produce a timestamped transcript",
+    "Segment the transcript and generate structured notes with an LLM",
+    "Derive study material from the notes, such as summaries and question/answer sets",
+    "Let the student attach notes to slides and jump from a note back to the audio moment",
+    "Store notes so they can be searched and revisited across a term"
+  ],
+  "evidence": [
+    {
+      "claim": "The owner chose to build an AI note-taking app in the same market as Genio and Jamworks: lecture capture and note-taking accommodations for higher-education students, sold to students and to university accessibility/disability services.",
+      "source": "Owner decision recorded in the working session that started this repository.",
+      "status": "planned",
+      "supports": "Establishes the intended market and the intended buyer for this repository. It is the basis for the drafted audience, problem, and solution above.",
+      "limits": "It does not establish that any part of the product exists, nor that the market is reachable, priced correctly, or free of competitors. It is an intention, not a result.",
+      "recorded_at": "2026-10-09T21:40:00Z",
+      "source_revision": {
+        "kind": "owner_decision",
+        "reference": "Owner statement of goal at repository start-up",
+        "observed_at": "2026-10-09"
+      },
+      "cite_in_readme": false
+    },
+    {
+      "claim": "The mechanism list above (capture, transcribe, segment, summarize, derive study material) is a plausible pipeline, not a chosen architecture.",
+      "source": "No implementation, benchmark, or design document has been inspected for this repository; the mechanism is unverified against a working build.",
+      "status": "unknown",
+      "supports": "Nothing yet. It marks the pipeline as an open question so a later reader does not mistake the list for a decision.",
+      "limits": "Says nothing about which capture, transcription, or LLM approach is feasible on the target platforms, at what cost, or at what accuracy.",
+      "recorded_at": "2026-10-09T21:40:00Z",
+      "source_revision": {
+        "kind": "unknown_search",
+        "reference": "No architecture search performed against this repository at the time of writing",
+        "observed_at": "2026-10-09"
+      },
+      "cite_in_readme": false
+    }
+  ],
+  "boundaries": [
+    "This repository has no implementation yet; nothing here is a shipped product claim.",
+    "No numeric claims — accuracy, latency, pricing, or market size — may appear in any human-facing document until a committed artifact or external source supports them.",
+    "Lecture recording and student data are handled under the rules the buyer's institution sets; the app does not decide those rules.",
+    "Competitor behaviour is described only from public sources, and never as a claim about a competitor's internals."
+  ],
+  "terminology": {
+    "preferred": {
+      "lecture capture": "recording and transcribing a class session",
+      "accommodation": "a support arrangement a university provides to a student",
+      "study material": "summaries, questions, and notes derived from a lecture"
+    },
+    "avoid": [
+      "note-taker replacement (implies a claim about a competitor or a policy position)",
+      "any accuracy or cost figure without a cited source"
+    ]
+  }
+}

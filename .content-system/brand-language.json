@@ -1,0 +1,21 @@
+{
+  "schema_version": "content-generation.brand-language.v1",
+  "name": "ai-note-taking-app",
+  "personality": ["plain", "practical", "calm"],
+  "audience_feeling": "A student should feel that a missed sentence is not a lost lecture, and that the notes they end up with are their own to study from.",
+  "promise": "Lecture audio becomes structured study notes a student can read, search, and revise from.",
+  "preferred_terms": {
+    "lecture": "a class session being captured",
+    "notes": "the structured study material produced from a lecture",
+    "transcript": "the raw timestamped text of the audio"
+  },
+  "avoid": [
+    "invented metrics (accuracy percentages, time saved, cost per student)",
+    "claiming shipped features while the repository has no implementation",
+    "describing a competitor's internal implementation as fact",
+    "unexplained acronyms (DSA, ADA, STT, diarization) on first use",
+    "speaking on behalf of a university's accessibility policy"
+  ],
+  "good_examples": [],
+  "bad_examples": []
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "content-generation.adapter.v1",
+  "system": "content-generation-modules",
+  "helper_repository": "https://github.com/Pukujan/content-generation-modules",
+  "helper_version": "0.5.12",
+  "helper_commit": "62340f3de702f6d2a7d97b9e16465b98360976a3",
+  "helper_pin_note": "FULL CGM 0.5.12 required: all eight modules. Validate with the pinned scripts/validate_content_system.py; apply writing routing at agent boot.",
+  "modules": [
+    "brand-foundation",
+    "content-context",
+    "writing-direction",
+    "human-sounding-writing",
+    "human-output-naming",
+    "visual-direction",
+    "image-generation",
+    "html-demo"
+  ],
+  "authoritative_project_files": [
+    ".content-system/project-brief.json",
+    "stack-manifest.json",
+    ".coord/assignment.json"
+  ],
+  "review_outputs": [],
+  "adoption_status": "adapter pinned; audience/problem/solution are DRAFTED FROM THE OWNER'S STATED GOAL (an AI note-taking app in the Genio/Jamworks lecture-capture and accessibility-accommodation niche) and are expected to be revised as the product is defined. No product evidence is claimed yet because the repository has no implementation."
+}

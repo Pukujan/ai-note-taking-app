@@ -1,0 +1,22 @@
+{
+  "schema_version": "content-generation.review-rubric.v1",
+  "dimensions": [
+    {
+      "id": "clarity",
+      "question": "Can a student tell what this does with a lecture, without reading a technical description first?"
+    },
+    {
+      "id": "honesty",
+      "question": "Does the text separate what is built from what is planned, and does every number have a cited source?"
+    },
+    {
+      "id": "buyer_fit",
+      "question": "Does the text speak to both the student and the accessibility office that would pay for it?"
+    },
+    {
+      "id": "privacy",
+      "question": "Does the text avoid exposing lecture audio, student names, or institutional policy positions?"
+    }
+  ],
+  "decision_rule": "human review; honesty and privacy must pass before anything is published"
+}
